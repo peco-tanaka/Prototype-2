@@ -13,6 +13,9 @@ GameObject:
   - component: {fileID: 6902667343386447098}
   - component: {fileID: 8829614319693474274}
   - component: {fileID: 5969213883283081198}
+  - component: {fileID: -6603207669840711987}
+  - component: {fileID: -1960781768869937139}
+  - component: {fileID: 4234876506215944900}
   m_Layer: 0
   m_Name: Food_Pizza_01
   m_TagString: Untagged
@@ -103,7 +106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdc0fad7d703948ee97ad7a12ce7afd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveForward
-  speed: 40
+  speed: 20
 --- !u!114 &5969213883283081198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,3 +119,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef2a3f5c65b894987a257dc43b1bf7b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DestroyOutOfBounds
+--- !u!65 &-6603207669840711987
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3380770773089658099}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.45970088, y: 0.13234863, z: 0.5536316}
+  m_Center: {x: 0, y: 0, z: -0.00000019371508}
+--- !u!54 &-1960781768869937139
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3380770773089658099}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &4234876506215944900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3380770773089658099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 308cd6c8fd6f54d07b2c59b98aff0fe0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DetectCollisions
